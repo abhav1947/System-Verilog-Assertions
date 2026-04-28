@@ -33,6 +33,7 @@ end
   property md();
     @(posedge clk)
     a_rl_b(a,b) ##1 c_rl_d(c,d);
+    // a ##1 b ##1 c ##2 d;
   endproperty
   
   assert property(
