@@ -1,5 +1,9 @@
 /*
 $fell check if there is a transition from 1 to 0 occuring. It samples the signal at 1st clock edge prepone region and for the 2nd clock edge it samples the same signal in prepone region, if there is a transition of signal from 1 to 0, then only it procedes to the consequent.
+
+Also over here if the signal continues to remain in 0 then we can consider it as a vaccuos pass
+
+If the signal contiues to remain 1, it is waiting for the signal to transition from 1 to 0.
 */
 
 module tb;
