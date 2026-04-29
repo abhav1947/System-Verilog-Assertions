@@ -12,6 +12,7 @@ module tb;
     #180;
     rst = 0;
     repeat(20) begin
+      @(posedge clk);
       a = $urandom;
       b = $urandom;
     end
